@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2? family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* root es lo mismo que html solo que root tiene mayor peso si hay reglas contradictorias*/
+:root {
+    --color-primario1: hsl(179, 62%, 43%);
+
+    --color-primario2: hsl(71, 73%, 54%);
+
+    --color-secundario1: hsl(204, 43%, 93%);
+
+    --color-secundario2: hsl(218, 22%, 67%);
+
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    }
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--color-secundario2);
+    font-size: 16px;
+}
+
+
+.seccion-principal{
+
+    /* width:500px; */
+    
+    
+    padding: 20px;
+    background-color:var(--color-secundario1);
+    
+}
+h1{
+    color: var(--color-primario1);
+}
+h2{
+    color: var(--color-primario2);
+}
+p{
+    color:var(--color-secundario2);
+}
+.secciones {   
+     /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color:var(--color-primario1);
+    color:var(--color-secundario1);
+    padding: 20px
+}
+
+.seccion1, .seccion2{
+    flex: 1 1 375px;
+}
+
+.seccion1 h1{
+    color: var(--color-secundario1);
+}
+.seccion1 div{
+    color: var(--color-secundario1);
+    
+} 
+
+.suscripcion{
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+
+    
+}
+.dolar{font-size:x-large;
+}
+.mes{
+    text-align: center;
+    margin-left: 10px;
+    color: var(--color-secundario1);
+}
+
+.seccion1 p{
+    color: var(--color-secundario1);
+}
+.boton{
+    width:100px;
+    height: 30px;
+    color: var(--color-secundario2);
+    background-color: var(--color-primario2);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-radius: 2em;
+
+    border-style: none;
+}
+.seccion2{
+    width:50%;
+    padding: 20px;
+}
+.seccion2 h1{
+    
+    color:var(--color-secundario1);
+}
+    
+.seccion2 ol {
+    padding-left: 0;
+    list-style-type: none;
+
+}
